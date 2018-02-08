@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.coloradotourguide.MainActivity">
+
+    <TextView
+        android:id="@+id/splash_textview"
+        style="@style/welcome_text_theme"/>
+
+    <RelativeLayout
+        android:id="@+id/lakes_activity"
+        style="@style/activity_theme"
+        android:layout_below="@+id/splash_textview">
+
+        <ImageView
+            style="@style/activity_image_theme"
+            android:src="@drawable/lakeactivity"/>
+
+        <TextView
+            style="@style/activity_textview_theme"
+            android:text="@string/lake_activity_text"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/breweries_activity"
+        style="@style/activity_theme"
+        android:layout_below="@+id/lakes_activity">
+
+        <ImageView
+            style="@style/activity_image_theme"
+            android:src="@drawable/breweryactivity"/>
+
+        <TextView
+            style="@style/activity_textview_theme"
+            android:text="@string/breweries_activity_text"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/restaurants_activity"
+        style="@style/activity_theme"
+        android:layout_below="@+id/breweries_activity">
+
+        <ImageView
+            style="@style/activity_image_theme"
+            android:src="@drawable/restaurantactivity"/>
+
+        <TextView
+            style="@style/activity_textview_theme"
+            android:text="@string/restaurants_activity_text"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/attractions_activity"
+        style="@style/activity_theme"
+        android:layout_below="@+id/restaurants_activity">
+
+        <ImageView
+            style="@style/activity_image_theme"
+            android:src="@drawable/attractionactivity"/>
+
+        <TextView
+            style="@style/activity_textview_theme"
+            android:text="@string/attractions_activity_text"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
